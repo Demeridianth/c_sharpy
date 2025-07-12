@@ -244,7 +244,12 @@ while (PR.Status.ToString() == "Success")
 //     }
 // }
 
-Rat wolfRat = new Rat();  // new class instance, class object
+Rat wolfRat = new("Skinny", 20, false);     // new class instance, class object
+// {
+//     Name = "Skinny Rat",
+//     Number = 20,
+//     IsRadioactive = false
+// };
 
 //CRUD
 wolfRat.Name = "Wolf Rat";
@@ -265,6 +270,36 @@ wolfRat.Name = "WOLF RAT";
 
 //Delete
 wolfRat.Name = "";
+
+
+
+// METHOD
+
+// from another class file
+
+// namespace Basics
+// {
+//     public class RealEstate
+//     {
+//         public int Adress { get; set; }
+//         public int Price { get; set; }
+//         public int SquareFootage { get; set; }
+
+//         public int CalculatePricePerFoot() => Price / SquareFootage;
+//         // OR
+//         // {
+//         //       return Price / SquareFootage
+//         // }
+//     }
+// }
+
+RealEstate elmStreet = new()
+{
+    Adress = "elmStreet",
+    Price = 20000,
+    SquareFootage = 1300
+};
+Console.WriteLine(elmStreet.CalculatePricePerFoot());
 
 
 

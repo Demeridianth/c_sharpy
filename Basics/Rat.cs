@@ -9,6 +9,16 @@ namespace Basics
     {
         public string Name { get; set; }
         public int Number { get; set; }  // property is like a variable
-        public bool IsRadioactive { get; set; }  
+        public bool IsRadioactive { get; set; }
+    }
+}
+
+namespace Basics
+{
+    public class AnotherRat
+    {
+        public string Name { get; set; }
+        public int Number { get; set; }  // property is like a variable
+        public bool IsRadioactive { get; set; }
     }
 }

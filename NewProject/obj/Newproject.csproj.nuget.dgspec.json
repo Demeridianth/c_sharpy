@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\C#\\NewProject\\Newproject.csproj": {}
+    "C:\\C#\\NewProject\\NewProject.csproj": {}
   },
   "projects": {
-    "C:\\C#\\NewProject\\Newproject.csproj": {
+    "C:\\C#\\NewProject\\NewProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\C#\\NewProject\\Newproject.csproj",
-        "projectName": "Newproject",
-        "projectPath": "C:\\C#\\NewProject\\Newproject.csproj",
+        "projectUniqueName": "C:\\C#\\NewProject\\NewProject.csproj",
+        "projectName": "NewProject",
+        "projectPath": "C:\\C#\\NewProject\\NewProject.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
         "outputPath": "C:\\C#\\NewProject\\obj\\",
         "projectStyle": "PackageReference",

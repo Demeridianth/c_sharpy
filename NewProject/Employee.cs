@@ -12,6 +12,16 @@ namespace NewProject
     {
         public string Name { get; set; }
         public int Age { get; set; }
-        public string position { get; set; }
+        public  int YearsWorked { get; set; }
+
+        public Employee(string name, int age, int yearsWorked)      // constructor
+        {
+            Name = name;
+            Age = age;
+            YearsWorked = yearsWorked;
+        }
+
+
+        public int CalculateAgeStarted() => Age - YearsWorked;
     }
-}
+};
