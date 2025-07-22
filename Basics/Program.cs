@@ -3,6 +3,7 @@ using System.Data;
 using System.Net;
 using System.Text;
 using Basics;
+using System.Windows.Markup;
 
 // See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello World");
@@ -230,7 +231,7 @@ while (PR.Status.ToString() == "Success")
 
 
 
-// Class
+// CLASS
 
 // In another class file:
 
@@ -241,35 +242,40 @@ while (PR.Status.ToString() == "Success")
 //         public string Name { get; set; }         // click "prop" to auto
 //         public int Number { get; set; }          // property is like a variable
 //         public bool IsRadioactive { get; set; }  
+
+             // constructor
+        //  public Rat(string name, int number, bool isRadioactive)
+        // {
+        //     Name = name;
+        //     Number = number;
+        //     IsRadioactive = isRadioactive;
+
+        // }
 //     }
 // }
 
-Rat wolfRat = new("Skinny", 20, false);     // new class instance, class object
+Rat wolfRat = new();     // new class instance, class object
 // {
 //     Name = "Skinny Rat",
 //     Number = 20,
 //     IsRadioactive = false
 // };
 
-//CRUD
+// OR
 wolfRat.Name = "Wolf Rat";
 wolfRat.Number = 1000;
 wolfRat.IsRadioactive = false;
 
-Rat fancyRat = new Rat();
-
-fancyRat.Name = "Fansy Rat";
-fancyRat.Number = 20;
-fancyRat.IsRadioactive = false;
-
 //Read
-Console.WriteLine(fancyRat.Name);
+Console.WriteLine(wolfRat.Name);
 
 //Update
 wolfRat.Name = "WOLF RAT";
 
 //Delete
 wolfRat.Name = "";
+
+// OR with constructor
 
 
 
@@ -301,5 +307,31 @@ RealEstate elmStreet = new()
 };
 Console.WriteLine(elmStreet.CalculatePricePerFoot());
 
+
+
+
+// TUPLE
+var values = ("a", 1, "z");      // can define datatype, dont neer var if do
+Console.WriteLine(values.Item1);
+Console.WriteLine(values.Item2);
+
+(string, int, string) tupleValues = ("a", 1, "z");      // can define datatype, dont neer var if do
+Console.WriteLine(tupleValues.Item1);
+Console.WriteLine(tupleValues.Item2);
+
+var moreValues = (First: "a", Second: 1, Third: "z");
+Console.WriteLine(moreValues.First);
+
+(string a, int b, bool c) ReturnValues()        // in a function
+{
+    return ("a", 1, true);
+}
+var valuesReturned = ReturnValues();            // function in a variable
+Console.WriteLine(valuesReturned.a);
+Console.WriteLine(valuesReturned.b);            // return tuple item
+
+(string a, int b, bool c) = ReturnValues();     // arguments destructuring function
+Console.WriteLine(a);                           // just use argument
+Console.WriteLine(b);
 
 

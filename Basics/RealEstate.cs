@@ -7,9 +7,9 @@ namespace Basics
 {
     public class RealEstate
     {
-        public string Adress { get; set; }
-        public int Price { get; set; }
-        public int SquareFootage { get; set; }
+        public required string Adress { get; set; }
+        public required int Price { get; set; }
+        public required int SquareFootage { get; set; }
 
         public int CalculatePricePerFoot() => Price / SquareFootage;
         // OR
