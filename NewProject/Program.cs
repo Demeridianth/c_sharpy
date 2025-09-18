@@ -9,41 +9,25 @@ using NewProject; // Needed for the .Contains() method
 
 
 
-// class Program
-// {
-//     static void Main()
-//     {
-//         Employee Clerk = new("Bob", 40, 30);
 
+int? value = null;      // allows NULL
 
-//         int startedAge = Clerk.CalculateAgeStarted();
-//         Console.WriteLine(startedAge);
-//     }
+string value2 = null!;   // bang operator, not advised
 
-// }
+Console.WriteLine(value2?.Length);
 
-var values = ("a", 1, "z");      // can define datatype, dont neer var if do
-Console.WriteLine(values.Item1);
-Console.WriteLine(values.Item2);
-
-(string, int, string) tupleValues = ("a", 1, "z");      // can define datatype, dont neer var if do
-Console.WriteLine(tupleValues.Item1);
-Console.WriteLine(tupleValues.Item2);
-
-var moreValues = (First: "a", Second: 1, Third: "z");
-Console.WriteLine(moreValues.First);
-
-(string a, int b, bool c) ReturnValues()        // in a function
+if (value2 is not null)
 {
-    return ("a", 1, true);
+    Console.WriteLine(value2.Length);
 }
-var valuesReturned = ReturnValues();            // function in a variable
-Console.WriteLine(valuesReturned.a);
-Console.WriteLine(valuesReturned.b);            // return tuple item
 
-(string a, int b, bool c) = ReturnValues();     // arguments destructuring function
-Console.WriteLine(a);                           // just use argument
-Console.WriteLine(b);
+
+Console.WriteLine(value2 ?? "No value!");       // logic in one line: if value == null print(No values)
+Console.WriteLine(value2 is not null ? "Has value!" : "No value");       // logic in one line: if value not null, elif is null
+
+
+
+
 
 
 

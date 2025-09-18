@@ -335,3 +335,19 @@ Console.WriteLine(a);                           // just use argument
 Console.WriteLine(b);
 
 
+// NULL
+
+int? value = null;      // allows NULL
+
+string value2 = null!;   // bang operator, not advised
+
+Console.WriteLine(value2?.Length);
+
+if (value2 is not null)
+{
+    Console.WriteLine(value2.Length);
+}
+
+
+Console.WriteLine(value2 ?? "No value!");       // logic in one line: if value == null print(No values)
+Console.WriteLine(value2 is not null ? "Has value!" : "No value");       // logic in one line: if value not null, elif is null
