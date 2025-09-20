@@ -348,6 +348,48 @@ if (value2 is not null)
     Console.WriteLine(value2.Length);
 }
 
-
 Console.WriteLine(value2 ?? "No value!");       // logic in one line: if value == null print(No values)
 Console.WriteLine(value2 is not null ? "Has value!" : "No value");       // logic in one line: if value not null, elif is null
+
+
+// CONSTRUCTOR
+namespace NewProject
+{
+    public class RealEstate
+    {
+        private string _adress;     // field
+        public RealEstate(string adress)        // constructor
+        {
+            _adress = adress;
+        }
+        public string Adress        // property
+        {
+            get => _adress;
+            set => _adress = value;
+        }
+    }
+}
+
+        // newer way
+
+namespace NewProject
+{
+    public class Employee
+    {
+        public string? Name { get; set; }
+        public int Age { get; set; }
+        public  int YearsWorked { get; set; }
+
+        public Employee() { }       // would work both ways
+
+        public Employee(string name, int age, int yearsWorked)      // constructor
+        {
+            Name = name;
+            Age = age;
+            YearsWorked = yearsWorked;
+        }
+
+
+        public int CalculateAgeStarted() => Age - YearsWorked;
+    }
+};
