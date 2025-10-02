@@ -393,3 +393,39 @@ namespace NewProject
         public int CalculateAgeStarted() => Age - YearsWorked;
     }
 };
+
+
+
+// STATIC
+
+
+// TimeUtility.PrintTime();
+
+namespace NewProject
+{
+    public static class TimeUtility
+    {
+        public static void PrintTime() => Console.WriteLine(DateTime.Now.ToShortTimeString());
+    }
+}
+
+
+namespace NewProject
+{
+    public class SavingAccount
+    {
+        public static double currInterestRate;     // var
+        public static double bondRate;              // must be static in order to be used in a method
+
+        static SavingAccount()                      // constructor
+        {
+            currInterestRate = 0.4;
+        }
+
+        public static void AddBondRate()            // method
+        {
+            currInterestRate = bondRate + 0.1;
+        }
+    }
+
+}

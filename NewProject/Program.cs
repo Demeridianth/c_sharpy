@@ -9,14 +9,37 @@ using System.Windows.Markup;
 using NewProject; // Needed for the .Contains() method
 
 
-class Program
-{
-    static void Main()
-    {
-        Employee manager = new("Bob", 42, 10);
 
-        Console.WriteLine($"{manager.Name} started working here at {manager.CalculateAgeStarted()} years old");
+
+TimeUtility.PrintTime();
+
+namespace NewProject
+{
+    public static class TimeUtility
+    {
+        public static void PrintTime() => Console.WriteLine(DateTime.Now.ToShortTimeString());
     }
+}
+
+
+namespace NewProject
+{
+    public class SavingAccount
+    {
+        public static double currInterestRate;     // var
+        public static double bondRate;              // must be static in order to be used in a method
+
+        static SavingAccount()                      // constructor
+        {
+            currInterestRate = 0.4;
+        }
+
+        public static void AddBondRate()            // method
+        {
+            currInterestRate = bondRate + 0.1;
+        }
+    }
+
 }
 
 
