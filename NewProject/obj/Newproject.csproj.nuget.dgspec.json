@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\c_sharpy\\NewProject\\Newproject.csproj": {}
+    "C:\\repos\\c_sharpy\\NewProject\\NewProject.csproj": {}
   },
   "projects": {
-    "C:\\repos\\c_sharpy\\NewProject\\Newproject.csproj": {
+    "C:\\repos\\c_sharpy\\NewProject\\NewProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\c_sharpy\\NewProject\\Newproject.csproj",
-        "projectName": "Newproject",
-        "projectPath": "C:\\repos\\c_sharpy\\NewProject\\Newproject.csproj",
+        "projectUniqueName": "C:\\repos\\c_sharpy\\NewProject\\NewProject.csproj",
+        "projectName": "NewProject",
+        "projectPath": "C:\\repos\\c_sharpy\\NewProject\\NewProject.csproj",
         "packagesPath": "C:\\Users\\Sergei\\.nuget\\packages\\",
         "outputPath": "C:\\repos\\c_sharpy\\NewProject\\obj\\",
         "projectStyle": "PackageReference",

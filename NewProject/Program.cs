@@ -10,6 +10,14 @@ using NewProject; // Needed for the .Contains() method
 
 
 
+Employee managerBob = new("Bob", 1, "manager");
+
+
+
+
+
+
+Console.WriteLine($"{managerBob.Name}, {managerBob.Id}, {managerBob.Position}");
 
 TimeUtility.PrintTime();
 
@@ -41,6 +49,7 @@ namespace NewProject
     }
 
 }
+
 
 
 
