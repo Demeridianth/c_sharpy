@@ -17,7 +17,7 @@ namespace NewProject
         public int Id { get; set; }
         public string Position { get; set; }
 
-        public Employee() {}
+        // public Employee() {}
 
         
         public Employee(string name, int id, string position)

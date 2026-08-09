@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Buffers;
+using System.Collections;
 using System.Globalization;
 using System.Linq;
 using System.Net.NetworkInformation;
@@ -9,47 +10,15 @@ using System.Windows.Markup;
 using NewProject; // Needed for the .Contains() method
 
 
+//Record
 
-Employee managerBob = new("Bob", 1, "manager");
+Person person1 = new("Bob", "White", new string[1] {"555-555"});
+// OR
+Person person2 = new("Dequan", "Black", ["12", "666-666"]);  // newer way
 
+Console.WriteLine(person2.PhoneNumbers[1]);
 
-
-
-
-
-Console.WriteLine($"{managerBob.Name}, {managerBob.Id}, {managerBob.Position}");
-
-TimeUtility.PrintTime();
-
-namespace NewProject
-{
-    public static class TimeUtility
-    {
-        public static void PrintTime() => Console.WriteLine(DateTime.Now.ToShortTimeString());
-    }
-}
-
-
-namespace NewProject
-{
-    public class SavingAccount
-    {
-        public static double currInterestRate;     // var
-        public static double bondRate;              // must be static in order to be used in a method
-
-        static SavingAccount()                      // constructor
-        {
-            currInterestRate = 0.4;
-        }
-
-        public static void AddBondRate()            // method
-        {
-            currInterestRate = bondRate + 0.1;
-        }
-    }
-
-}
-
+public record Person(string FirstName, string LastName, string[] PhoneNumbers);
 
 
 

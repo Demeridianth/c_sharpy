@@ -4,6 +4,7 @@ using System.Net;
 using System.Text;
 using Basics;
 using System.Windows.Markup;
+using System.Collections;
 
 // See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello World");
@@ -428,4 +429,41 @@ namespace NewProject
         }
     }
 
+}
+
+
+//LIST
+
+ArrayList betterArray = new ArrayList();  // old way
+
+//CRud
+
+//Create
+List<int> numNums = [1, 2, 2, 3, 4, 5];  // new way
+List<string> strStr = ["a", "b", "c"];  // new way\
+
+//Read
+// foreach(var num in numNums)
+// {
+//     Console.WriteLine(num);
+// }
+
+//Update
+numNums.Add(0);   // will add 0 to the end of the list
+//insert
+numNums.Insert(0, 888);  // the first one is the index, the second is the value
+
+
+// //Delete (filter)
+// var twoNumber = numNums.Where((n) => n == 2);   // logic - take numNums list and filter it by: "give me numbers that only 2"
+// var not_twoNumber = numNums.Where((n) => n != 2);   // logic - take numNums list and filter it by: "give me numbers except 2"
+
+//Delete (remove)
+numNums.Remove(1);   // removes the value
+numNums.RemoveAt(1);   // removes the value AT THE INDEX
+
+
+foreach(var num in numNums)
+{
+    Console.WriteLine(num);
 }
