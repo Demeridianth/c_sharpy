@@ -467,3 +467,37 @@ foreach(var num in numNums)
 {
     Console.WriteLine(num);
 }
+
+
+//Record
+
+Person person1 = new("Bob", "White", new string[1] {"555-555"});
+// OR
+Person person2 = new("Dequan", "Black", ["12", "666-666"]);  // newer way
+
+Console.WriteLine(person2.PhoneNumbers[1]);
+
+public record Person(string FirstName, string LastName, string[] PhoneNumbers);
+
+
+
+// Delegates
+Action loggerActions = () =>
+{
+  System.Console.WriteLine("This is simple");  
+};
+
+Func<int, int> loggerFunc = (x) =>
+{
+    return x + 2;  
+};
+
+
+SuperCustom loggerFunction = (int x) =>
+{
+    return x + 2;  
+};
+
+var list = Enumerable.Range(1, 10).Select(i => i * 3).ToList(); 
+
+public delegate int SuperCustom(int x);
