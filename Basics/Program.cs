@@ -501,3 +501,75 @@ SuperCustom loggerFunction = (int x) =>
 var list = Enumerable.Range(1, 10).Select(i => i * 3).ToList(); 
 
 public delegate int SuperCustom(int x);
+
+
+
+// DICT
+
+// with for loop:
+var solution = new Solution();
+Console.WriteLine(string.Join(", ", solution.TwoSum([2, 7, 11, 15], 9)));
+public class Solution
+{
+    public int[] TwoSum(int[] nums, int target)
+    {
+        for(var i = 0; i < nums.Length; i++)
+        {
+            for(var j = i + 1; j < nums.Length; j++)
+            {
+                if(nums[i] + nums[j] == target)
+                {
+                    return [i, j];
+                }
+            }
+        }
+        return [];
+    }
+}
+
+// with dict
+public class Solution
+{
+    public int[] TwoSum(int[] nums, int target)
+    {
+        Dictionary<int, int> dict = new();
+        for(var i = 0; i < nums.Length; i++)
+        {
+            int complement = target - nums[i];
+            if(dict.ContainsKey(complement))
+            {
+                return new int[] {dict[complement], i };
+            }
+            if(!dict.ContainsKey(nums[i]))
+            {
+                dict.Add(nums[i], i);
+            }
+        }
+        
+        throw new ArgumentException("No solution");
+    }
+}
+
+// simpler
+
+Dictionary<string, int> ages = new();
+
+ages.Add("John", 25);
+ages.Add("Anna", 30);
+ages.Add("Mike", 22);
+Console.WriteLine(ages["John"]);
+
+ages["John"] = 26;
+
+Console.WriteLine(ages["John"]); // 26
+
+// check if exists
+ages["John"] = 26;
+
+Console.WriteLine(ages["John"]); // 26
+
+// loop through
+foreach (var person in ages)
+{
+    Console.WriteLine($"{person.Key}: {person.Value}");
+}

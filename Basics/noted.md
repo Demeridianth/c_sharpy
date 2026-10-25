@@ -84,3 +84,9 @@ A delegate lets you store a function itself in a variable:
 Lambda expression
    │
    └── x => x + 2      → convenient way of creating the function
+
+
+# for loop
+for(var i = 0; i < nums.Length; i++)
+        |            |           |
+   start with 0;   condition;   increase by 1     
