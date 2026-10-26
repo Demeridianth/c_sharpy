@@ -1,5 +1,12 @@
 ## for "to_do_" - write in old and then in new syntax
 
+
+## Creating a new app
+dotnet new console -n to_do 
+
+## Adding it to sln file
+dotnet sln "C#.sln" add "to_do/to_do.csproj"
+
 ## Running APP
 1. dotnet run
 2. dotnet watch run

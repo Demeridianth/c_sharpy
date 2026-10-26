@@ -1,0 +1,15 @@
+C:\repos\c_sharpy\to_do\bin\Debug\net9.0\to_do.exe
+C:\repos\c_sharpy\to_do\bin\Debug\net9.0\to_do.deps.json
+C:\repos\c_sharpy\to_do\bin\Debug\net9.0\to_do.runtimeconfig.json
+C:\repos\c_sharpy\to_do\bin\Debug\net9.0\to_do.dll
+C:\repos\c_sharpy\to_do\bin\Debug\net9.0\to_do.pdb
+C:\repos\c_sharpy\to_do\obj\Debug\net9.0\to_do.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\c_sharpy\to_do\obj\Debug\net9.0\to_do.AssemblyInfoInputs.cache
+C:\repos\c_sharpy\to_do\obj\Debug\net9.0\to_do.AssemblyInfo.cs
+C:\repos\c_sharpy\to_do\obj\Debug\net9.0\to_do.csproj.CoreCompileInputs.cache
+C:\repos\c_sharpy\to_do\obj\Debug\net9.0\to_do.sourcelink.json
+C:\repos\c_sharpy\to_do\obj\Debug\net9.0\to_do.dll
+C:\repos\c_sharpy\to_do\obj\Debug\net9.0\refint\to_do.dll
+C:\repos\c_sharpy\to_do\obj\Debug\net9.0\to_do.pdb
+C:\repos\c_sharpy\to_do\obj\Debug\net9.0\to_do.genruntimeconfig.cache
+C:\repos\c_sharpy\to_do\obj\Debug\net9.0\ref\to_do.dll
